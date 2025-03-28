@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Walled</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <img src="./assets/logo.png" alt="Walled Logo" />
+            <div id="navbar-menu">
+                <ul>
+                    <li id="nav-dashboard" class="active"><a href="#">Dashboard</a></li>
+                    <li id="nav-transfer"><a href="#">Transfer</a></li>
+                    <li id="nav-topup"><a href="#">Top Up</a></li>
+                    <li id="nav-signout"><a href="#">Sign Out</a></li>
+                </ul>
+                <div id="divider"></div>
+                <button id="mode-toggle">
+                    <img src="./assets/sun.png" alt="Mode Toggle" />
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Greetings Section -->
+            <section id="greetings-section">
+                <div id="greetings-text">
+                    <p id="greeting-message" class="bold">Good Morning, Rapowobo</p>
+                    <p id="greeting-subtext">Check all your incoming and outgoing transactions here</p>
+                </div>
+                <div id="user-profile">
+                    <div id="user-info">
+                        <p id="user-name" class="bold">Rapowobo Dety</p>
+                        <p id="user-account-type">Personal Account</p>
+                    </div>
+                    <div id="user-avatar" class="avatar"></div>
+                </div>
+            </section>
+
+            <!-- Account Section -->
+            <section id="account-section">
+                <div id="account-details">
+                    <p class="label">Account No.</p>
+                    <b id="account-number" class="number">100899</b>
+                </div>
+                <div id="balance-details">
+                    <p class="label">Balance</p>
+                    <div id="balance-info">
+                        <div id="balance-display">
+                            <p id="balance-amount" class="number">Rp 10.000.000,00</p>
+                            <button>
+                                <div id="toggle-visibility" alt="Toggle Visibility" >
+                                    <img src="./assets/eye.png" />
+                                </div>  
+                            </button>
+                        </div>
+                        <div id="balance-actions">
+                            <button id="add-funds">
+                                <div class="icon-container">
+                                    <img src="./assets/plus.png" alt="Add Funds" />
+                                </div>
+                            </button>
+                            <button id="send-funds">
+                                <div class="icon-container">
+                                    <img src="./assets/paper-plane.png" alt="Send Funds" />
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filtering Section -->
+            <section id="filtering-section">
+                <input id="search-input" class="input" type="text" placeholder="Search" />
+                <div id="filter-options">
+                    <div class="filter-group">
+                        <label for="transaction-limit" class="label">Show</label>
+                        <select id="transaction-limit" class="input">
+                            <option value="10">Last 10 transactions</option>
+                            <option value="50">Last 50 transactions</option>
+                            <option value="100">Last 100 transactions</option>
+                            <option value="1000">Last 1000 transactions</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort-column" class="label">Sort By</label>
+                        <select id="sort-column" class="input">
+                            <option value="date">Date</option>
+                            <option value="type">Type</option>
+                            <option value="from">From</option>
+                            <option value="amount">Amount</option>
+                        </select>
+                        <select id="sort-order" class="input">
+                            <option value="desc">Descending</option>
+                            <option value="asc">Ascending</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transactions Section -->
+            <section id="transactions-section">
+                <table id="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Type</th>
+                            <th>From / To</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20:10 - 30 June 2022</td>
+                            <td>Transfer</td>
+                            <td>Sendy</td>
+                            <td>From Coffee</td>
+                            <td>75.000</td>
+                        </tr>
+                        <tr>
+                            <td>20:10 - 30 June 2022</td>
+                            <td>Transfer</td>
+                            <td>Sendy</td>
+                            <td>From Coffee</td>
+                            <td>75.000</td>
+                        </tr>
+                        <tr>
+                            <td>20:10 - 30 June 2022</td>
+                            <td>Transfer</td>
+                            <td>Sendy</td>
+                            <td>From Coffee</td>
+                            <td>75.000</td>
+                        </tr>
+                        <tr>
+                            <td>20:10 - 30 June 2022</td>
+                            <td>Transfer</td>
+                            <td>Sendy</td>
+                            <td>From Coffee</td>
+                            <td>75.000</td>
+                        </tr>
+                        <tr>
+                            <td>20:10 - 30 June 2022</td>
+                            <td>Transfer</td>
+                            <td>Sendy</td>
+                            <td>From Coffee</td>
+                            <td>75.000</td>
+                        </tr>
+                        <tr>
+                            <td>20:10 - 30 June 2022</td>
+                            <td>Transfer</td>
+                            <td>Sendy</td>
+                            <td>From Coffee</td>
+                            <td>75.000</td>
+                        </tr>
+                        <tr>
+                            <td>20:10 - 30 June 2022</td>
+                            <td>Transfer</td>
+                            <td>Sendy</td>
+                            <td>From Coffee</td>
+                            <td>75.000</td>
+                        </tr>
+                        <tr>
+                            <td>20:10 - 30 June 2022</td>
+                            <td>Transfer</td>
+                            <td>Sendy</td>
+                            <td>From Coffee</td>
+                            <td>75.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Pagination -->
+                <div id="pagination">
+                    <button class="pagination-btn" id="pagination-first" disabled>First</button>
+                    <button class="pagination-btn">1</button>
+                    <button class="pagination-btn active">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn" id="pagination-next">Next</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

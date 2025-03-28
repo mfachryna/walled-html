@@ -1,0 +1,327 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    font-weight: lighter;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 0;
+    text-align: inherit;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    font: inherit;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 7rem;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#mode-toggle img {
+    height: 1.5rem;
+}
+
+#navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+#navbar-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+#navbar-menu .active {
+    font-weight: bold;
+    color: #0061FF;
+}
+
+#divider {
+    width: 0.1rem;
+    height: 3rem;
+    background-color: #d3d3d3;
+}
+
+/* Main Content */
+#main-content {
+    padding: 3rem 7rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Greetings Section */
+#greetings-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#greeting-message {
+    font-size: 2.5rem !important;
+    line-height: 3.5rem !important;
+}
+#greetings-section p {
+    font-size: 1.125rem;
+    line-height: 1.3rem;
+}
+
+#user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#user-avatar {
+    height: 5rem;
+    width: 5rem;
+    background-image: url("./assets/hero.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    border: 0.35rem solid #0061FF;
+}
+
+/* Account Section */
+#account-section {
+    display: flex;
+    gap: 2rem;
+}
+
+#account-details {
+    height: 12rem;
+    width: 19rem;
+    background-color: #0061FF;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 2.5rem;
+    color: white;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#balance-details {
+    height: 12rem;
+    width: 100%;
+    border-radius: 1.2rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 2.5rem;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#balance-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+}
+
+
+#balance-display {
+    display: flex;
+    align-items: center;
+}
+
+#toggle-visibility {
+    height: 1.5rem;
+    margin-left: 1.5rem;
+}
+#toggle-visibility img {
+    height: 100%;
+}
+
+#balance-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.icon-container {
+    background-color: #0061FF;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.5rem #19918F;
+}
+
+.icon-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Filtering Section */
+#filtering-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.input {
+    position: relative;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    padding: 0 0.75rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+select.input::after{
+    content: "▼";
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+}
+
+
+#account-section .label {
+    font-size: 1.125rem;
+}
+
+#account-section .number {
+    line-height: 3rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#search-input::placeholder {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+#search-input:focus {
+    box-shadow: 0 0 5px #0061FF;
+    border: 1px solid #0061FF;
+}
+
+#filter-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Transactions Section */
+#transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#transactions-table th,
+#transactions-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+#transactions-table tr:nth-child(even) {
+    background-color: #fff;
+}
+
+#transactions-table th {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+#transactions-table tr:last-child td {
+    border-bottom: none;
+}
+
+#transactions-table td.amount {
+    text-align: right;
+    font-weight: bold;
+}
+
+#transactions-table td.amount.positive {
+    color: green;
+}
+
+#transactions-table td.amount.negative {
+    color: red;
+}
+
+/* Pagination */
+#pagination {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#pagination-first {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+#pagination-next {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.pagination-btn {
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination-btn.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination-btn:disabled {
+    background-color: #f8f9fa;
+    color: #adb5bd;
+    cursor: not-allowed;
+}
